@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="ru.rlokc.bachparse.consumer">
+   <implementation class="ru.rlokc.bachparse.consumer.NlpConsumerImpl"/>
+   <service>
+      <provide interface="ru.rlokc.bachparse.service.api.INlpServiceConsumer"/>
+   </service>
+   <reference bind="addService" unbind="removeService" cardinality="0..n" interface="ru.rlokc.bachparse.service.api.INlpService" name="INlpService" policy="dynamic"/>
+</scr:component>

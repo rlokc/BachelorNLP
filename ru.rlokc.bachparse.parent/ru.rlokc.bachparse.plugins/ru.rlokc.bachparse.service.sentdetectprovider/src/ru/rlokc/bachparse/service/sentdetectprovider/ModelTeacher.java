@@ -16,15 +16,9 @@ import opennlp.tools.util.TrainingParameters;
 import opennlp.tools.sentdetect.SentenceDetectorME;
 
 public class ModelTeacher {
-	private String filename;
-	private String modelFile = "model.bin";
 	
-	public ModelTeacher(){
-		
-	}
-	
-	public void train(String filename) throws Exception{
-		this.filename = filename;
+	public static void train(String filename) throws Exception{
+		String modelFile = "model.bin";
 		File file = new File(filename);
 		Charset charset = Charset.forName("UTF-8");
 		ObjectStream<String> lineStream = 

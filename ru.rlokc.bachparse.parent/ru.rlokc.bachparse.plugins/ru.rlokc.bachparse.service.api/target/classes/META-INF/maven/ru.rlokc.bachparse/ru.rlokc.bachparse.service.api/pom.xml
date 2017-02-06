@@ -9,4 +9,11 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>ru.rlokc.bachparse.service.api</artifactId>
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.opennlp</groupId>
+			<artifactId>opennlp-tools</artifactId>
+			<version>1.7.0</version>
+		</dependency>
+	</dependencies>
 </project>

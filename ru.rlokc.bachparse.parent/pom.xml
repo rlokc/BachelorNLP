@@ -10,4 +10,21 @@
   	<module>ru.rlokc.bachparse.relengs</module>
   	<module>ru.rlokc.bachparse.tests</module>
   </modules>
+  
+  <repositories>
+  	<repository>
+    	<id>ProjectRepo</id>
+    	<name>ProjectRepo</name>
+    	<url>file://${project.basedir}/libs</url>
+  	</repository>
+  </repositories>
+  
+  	<dependencies>
+		<dependency>
+			<groupId>org.apache.opennlp</groupId>
+			<artifactId>opennlp-tools</artifactId>
+			<version>1.7.0</version>
+		</dependency>
+	</dependencies>
 </project>
+

@@ -10,4 +10,4 @@ Import-Package: org.osgi.framework;version="1.8.0"
 Bundle-ActivationPolicy: lazy
 Bundle-Activator: ru.rlokc.bachparse.service.modelprovider.ServiceActivator
 Bundle-ClassPath: .,
- target/dependencies/opennlp-tools-1.7.0.jar
+ target/dependency/opennlp-tools-1.7.0.jar

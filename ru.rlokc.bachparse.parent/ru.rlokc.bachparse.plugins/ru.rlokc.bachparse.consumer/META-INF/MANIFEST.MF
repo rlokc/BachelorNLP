@@ -9,3 +9,5 @@ Require-Bundle: ru.rlokc.bachparse.service.api;bundle-version="1.0.0"
 Import-Package: org.osgi.framework;version="1.8.0"
 Bundle-ActivationPolicy: lazy
 Bundle-Activator: ru.rlokc.bachparse.consumer.ConsumerActivator
+Bundle-ClassPath: target/dependency/opennlp-tools-1.7.0.jar,
+ .

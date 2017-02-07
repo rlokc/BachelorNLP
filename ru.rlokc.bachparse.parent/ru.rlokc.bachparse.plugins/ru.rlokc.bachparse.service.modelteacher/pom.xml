@@ -9,7 +9,4 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>ru.rlokc.bachparse.service.modelprovider</artifactId>
-	<build>
-		<sourceDirectory>src/main/java</sourceDirectory>
-	</build>
 </project>

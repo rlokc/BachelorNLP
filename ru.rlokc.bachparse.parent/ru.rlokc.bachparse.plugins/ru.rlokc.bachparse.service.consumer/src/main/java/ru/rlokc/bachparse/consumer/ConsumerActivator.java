@@ -16,6 +16,7 @@ public class ConsumerActivator implements BundleActivator{
 		ServiceReference<?> reference = context.getServiceReference(IModelProvider.class.getName());
 		provider = (IModelProvider) context.getService(reference);
 		System.out.println("Consumer launched, got a provider");
+		provider.getModel("SentDetectModel", "SentenceDetectorME", false);
 	}
 	
 	public void stop(BundleContext context) {

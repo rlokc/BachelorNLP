@@ -9,7 +9,7 @@
   	<module>ru.rlokc.bachparse.features</module>
   	<module>ru.rlokc.bachparse.relengs</module>
   	<module>ru.rlokc.bachparse.tests</module>
-  	<module>gdfgdg</module>
+  	
   </modules>
   
   <repositories>

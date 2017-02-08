@@ -3,8 +3,8 @@ Bundle-ManifestVersion: 2
 Bundle-Name: ModelProvider
 Bundle-SymbolicName: ru.rlokc.bachparse.service.modelprovider
 Bundle-Version: 1.0.0.qualifier
-Bundle-ClassPath: .,
- target/dependency/opennlp-tools-1.7.0.jar
+Bundle-ClassPath: target/dependency/opennlp-tools-1.7.0.jar,
+ .
 Bundle-Activator: ru.rlokc.bachparse.service.modelprovider.ServiceActivator
 Require-Bundle: ru.rlokc.bachparse.service.api;bundle-version="1.0.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8

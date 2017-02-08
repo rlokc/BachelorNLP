@@ -6,5 +6,5 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <groupId>ru.rlokc.bachparse</groupId>
-  <artifactId>ru.rlokc.bachparse.service.api</artifactId>
+  <artifactId>ru.rlokc.bachparse.service.consumer</artifactId>
 </project>

@@ -5,6 +5,5 @@
     <artifactId>ru.rlokc.bachparse.plugins</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>ru.rlokc.bachparse</groupId>
-  <artifactId>ru.rlokc.bachparse.service.api</artifactId>
+  <artifactId>ru.rlokc.bachparse.service.modelprovider</artifactId>
 </project>

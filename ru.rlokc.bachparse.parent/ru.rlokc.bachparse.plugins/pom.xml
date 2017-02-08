@@ -11,5 +11,7 @@
   	<module>ru.rlokc.bachparse.consumer</module>
   	<module>ru.rlokc.bachparse.service.api</module>
   	<module>ru.rlokc.bachparse.service.modelteacher</module>
+  	<module>ru.rlokc.bachparse.service.consumer</module>
+  	<module>ru.rlokc.bachparse.service.modelprovider</module>
   </modules>
 </project>

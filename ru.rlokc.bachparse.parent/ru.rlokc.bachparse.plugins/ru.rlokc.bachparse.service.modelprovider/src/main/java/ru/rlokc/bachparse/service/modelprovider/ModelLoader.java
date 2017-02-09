@@ -16,7 +16,7 @@ public class ModelLoader {
 		BaseModel model = null;
 		if (f.exists()){
 			try {
-				Class<?> modelClass = Class.forName("opennlp.tools.sentdetect.SentenceModel");//modelType);
+				Class<?> modelClass = Class.forName(modelType);//modelType);
 				Constructor<?> cons = modelClass.getConstructor(File.class);
 				model = (BaseModel) cons.newInstance(f);
 			} catch (Exception e) {

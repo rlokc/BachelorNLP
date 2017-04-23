@@ -22,7 +22,7 @@ public class ConsumerActivator implements BundleActivator{
 		provider = (IModelProvider) context.getService(reference);
 		System.out.println("Consumer launched, got a provider");
 		
-		SentenceModel model = (SentenceModel) provider.getModel("opennlp.tools.sentdetect.SentenceModel", "SentenceDetectorME", false);
+		SentenceModel model = (SentenceModel) provider.getModel("opennlp.tools.sentdetect.SentenceModel", "SentenceDetectorME", true);
 		SentenceParser parser = new SentenceParser(model);
 		
 		ClassLoader classLoader = getClass().getClassLoader();

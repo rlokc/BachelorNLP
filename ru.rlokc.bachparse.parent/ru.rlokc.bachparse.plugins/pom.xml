@@ -13,5 +13,6 @@
   	
   	<module>ru.rlokc.bachparse.service.consumer</module>
   	<module>ru.rlokc.bachparse.service.modelprovider</module>
+  	<module>ru.rlokc.bachparse.util.xmlopener</module>
   </modules>
 </project>

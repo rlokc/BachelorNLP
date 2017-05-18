@@ -1,12 +1,18 @@
 package ru.rlokc.bachparse.service.modelprovider;
 
+import java.io.File;
+
 import opennlp.tools.postag.POSSample;
 import opennlp.tools.util.ObjectStream;
 
-public class OpenCorporaPOSSampleStream implements ObjectStream<POSSample> {
+public class OpenCorporaPOSSampleStream extends XmlOpener implements ObjectStream<POSSample> {
 	
-	public OpenCorporaPOSSampleStream() {
-		
+	public OpenCorporaPOSSampleStream(String filePath) {
+		super(filePath);
+	}
+	
+	public OpenCorporaPOSSampleStream(File file) {
+		super(file);
 	}
 	
 	public POSSample read() {

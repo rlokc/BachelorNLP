@@ -13,21 +13,15 @@ import opennlp.tools.sentdetect.SentenceSampleStream;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.Span;
 
-public class OpenCorporaSentenceSampleStream implements ObjectStream<SentenceSample>{
+public class OpenCorporaSentenceSampleStream extends XmlOpener implements ObjectStream<SentenceSample>{
 
-	private XMLStreamReader streamReader;
 
 	public OpenCorporaSentenceSampleStream(String filePath) {
-		this(new File(filePath));
+		super(filePath);
 	}
 	
 	public OpenCorporaSentenceSampleStream(File file) {
-		XMLInputFactory xmlif = XMLInputFactory.newInstance();
-		try {
-			streamReader = xmlif.createXMLStreamReader(new FileInputStream(file));
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		super(file);
 	}
 
 	public SentenceSample read() {

@@ -4,7 +4,7 @@ Bundle-Name: Api
 Bundle-SymbolicName: ru.rlokc.bachparse.service.api;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .,
- target/dependency/opennlp-tools-1.7.0.jar
+ target/dependency/opennlp-tools-1.7.2.jar
 Export-Package: opennlp.tools.sentdetect,
  opennlp.tools.util,
  opennlp.tools.util.model,

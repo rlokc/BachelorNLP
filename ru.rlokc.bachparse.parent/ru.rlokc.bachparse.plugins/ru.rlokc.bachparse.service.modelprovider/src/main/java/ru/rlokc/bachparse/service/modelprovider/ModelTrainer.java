@@ -22,10 +22,17 @@ public class ModelTrainer {
 		String modelFilePath = modelDir + elementType + ".bin";
 		File modelFile = new File(modelFilePath);
 
+		//TODO: Maybe reimplement it into a lookup table
 		if (elementType == "SentenceDetectorME")
 			model = SentDetectTrainer.train(trainFile);
 		else if (elementType == "TokenizerME")
 			model = TokenizerTrainer.train(trainFile);
+		else if (elementType == "POSTaggerME")
+			model = POSTaggerTrainer.train(trainFile);
+		else if (elementType == "NameFinderME")
+			model = POSTaggerTrainer.train(trainFile);
+		else
+			System.out.println("No trainer for " + elementType); //TODO: Remake it into exception throwing
 		
 		if (model != null) {
 			OutputStream modelOut = null;

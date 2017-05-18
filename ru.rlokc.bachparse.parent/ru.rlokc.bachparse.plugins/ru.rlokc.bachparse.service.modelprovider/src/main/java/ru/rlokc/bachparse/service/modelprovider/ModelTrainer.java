@@ -9,8 +9,8 @@ import opennlp.tools.util.model.BaseModel;
 
 
 public class ModelTrainer {
-	private static String modelDir = "/Users/rlokc/Dropbox/Education/7sem/Bachelor/models/";
-	private static String trainDir = "/Users/rlokc/Dropbox/Education/7sem/Bachelor/training/";
+	private static String modelDir = "/Users/rlokc/Programming/Bachelor/OpenCorpora/models/";
+	private static String trainDir = "/Users/rlokc/Programming/Bachelor/OpenCorpora/training/";
 	
 	public static BaseModel trainModel(String modelType, String elementType){
 		

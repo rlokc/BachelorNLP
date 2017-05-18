@@ -20,9 +20,7 @@ public class SentDetectTrainer {
 		SentenceModel model = null;
 		try {
 			Charset charset = Charset.forName("UTF-8");
-			ObjectStream<String> lineStream = 
-					new PlainTextByLineStream(new MarkableFileInputStreamFactory(trainFile), charset);
-			ObjectStream<SentenceSample> sampleStream = new SentenceSampleStream(lineStream);
+			ObjectStream<SentenceSample> sampleStream = new OpenCorporaSentenceSampleStream(trainFile);
 			SentenceDetectorFactory factory = new SentenceDetectorFactory("ru", true, null, null);
 			model = SentenceDetectorME.train("en", sampleStream, factory, TrainingParameters.defaultParams());
 			sampleStream.close();

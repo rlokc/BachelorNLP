@@ -4,12 +4,15 @@ Bundle-Name: Consumer
 Bundle-SymbolicName: ru.rlokc.bachparse.consumer
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .,
- target/dependency/opennlp-tools-1.7.0.jar
+ target/dependency/opennlp-tools-1.7.2.jar
 Bundle-Activator: ru.rlokc.bachparse.consumer.ConsumerActivator
 Require-Bundle: ru.rlokc.bachparse.service.api;bundle-version="1.0.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Import-Package: opennlp.tools.sentdetect,
  opennlp.tools.util.model,
+ opennlp.tools.postag,
+ opennlp.tools.tokenize,
+ opennlp.tools.namefind,
  org.osgi.framework;version="1.8.0"
 Service-Component: OSGI-INF/component.xml
 Bundle-ActivationPolicy: lazy

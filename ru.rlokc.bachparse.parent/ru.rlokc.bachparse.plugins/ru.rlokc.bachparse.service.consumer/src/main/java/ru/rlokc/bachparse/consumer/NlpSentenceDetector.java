@@ -14,12 +14,12 @@ import java.util.Arrays;
 import opennlp.tools.sentdetect.SentenceDetectorME;
 import opennlp.tools.sentdetect.SentenceModel;
 
-public class SentenceParser {
+public class NlpSentenceDetector {
 	
 	SentenceModel model;
 	SentenceDetectorME parser;
 	
-	public SentenceParser(SentenceModel model) {
+	public NlpSentenceDetector(SentenceModel model) {
 		this.model = model;
 		this.parser = new SentenceDetectorME(model);
 	}

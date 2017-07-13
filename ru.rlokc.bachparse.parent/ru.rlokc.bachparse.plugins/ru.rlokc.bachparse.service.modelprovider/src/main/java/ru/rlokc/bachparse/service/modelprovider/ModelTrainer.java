@@ -9,14 +9,14 @@ import opennlp.tools.util.model.BaseModel;
 
 
 public class ModelTrainer {
-	private static String modelDir = "/Users/rlokc/Programming/Bachelor/OpenCorpora/models/";
-	private static String trainDir = "/Users/rlokc/Programming/Bachelor/OpenCorpora/training/";
+	private static String modelDir = "/home/rlokc/Dropbox/Education/7sem/Bachelor/";
+	private static String trainDir = "/home/rlokc/Dropbox/Education/7sem/Bachelor/training/";
 	
 	public static BaseModel trainModel(String modelType, String elementType){
 		
 		BaseModel model = null;
 		
-		String trainFilePath = trainDir + elementType + ".train";
+		String trainFilePath = trainDir + "SentenceDetectorME.train";
 		File trainFile = new File(trainFilePath);
 		
 		String modelFilePath = modelDir + elementType + ".bin";

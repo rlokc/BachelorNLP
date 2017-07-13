@@ -8,7 +8,7 @@ import opennlp.tools.sentdetect.SentenceModel;
 
 public class ModelLoader {
 	//TODO: find a way to store this thing
-	private static String modelDir = "%папка_моделей%";
+	private static String modelDir = "/home/rlokc/Dropbox/Education/7sem/Bachelor/";
 	
 	public static BaseModel loadModel(String modelType, String elementType){
 		String modelPath = modelDir + elementType + ".bin";
